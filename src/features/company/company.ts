@@ -2,7 +2,6 @@ export type CompanyStatus = "ACTIVE" | "INACTIVE";
 
 export interface CompanyResponse {
   id: number;
-  tenantId: number;
   companyCode: string;
   companyName: string;
   contactPerson: string;
@@ -28,3 +27,5 @@ export interface CreateCompanyRequest {
   city: string;
   address: string;
 }
+
+export type UpdateCompanyRequest = CreateCompanyRequest;
